@@ -1,8 +1,6 @@
 # PersonalAdressBook.Web
 
-Kişisel Adres Defteri, kişi bilgilerini yönetmek için kullanılan bir basit web uygulamasıdır. Bu uygulama, kişi ekleme, silme,
-düzenleme ve isim/soyisime göre arama gibi temel işlevleri içerir. Ayrıca, kullanıcı bir kişi eklediğinde veya güncellediğinde,
-bir bildirim penceresi ile uyarılır.
+Personal Address Book, kişi bilgilerini yönetmek için kullanılan bir web uygulamasıdır. Bu uygulama, kişi ekleme, silme, düzenleme ve isim/soyisime göre arama gibi temel işlevleri içerir. Ayrıca, kullanıcı bir kişi eklediğinde, sildiğinde veya düzenlediğinde, bu işlemler SQL veritabanına da yansır. Ayrıca, kullanıcıya işlem sonuçları için bildirimler (alerts) sunar.
 
 ## Özellikler
 
@@ -10,16 +8,22 @@ bir bildirim penceresi ile uyarılır.
 - Kişi silme
 - Kişi düzenleme
 - İsim ve soyisime göre arama
-- Uyarılar (Alerts)
+- SQL veritabanı entegrasyonu
+- İşlem sonuçları için bildirimler (alerts)
 
 ## Nasıl Kullanılır
 
 1. Uygulamayı başlatın.
 2. Kişi sayfasına gidin.
-3. "Kişi Bilgilerini Ekle" seçeneği ile yeni bir kişi ekleyin.
+3. "Kişi Ekle" seçeneği ile yeni bir kişi ekleyin.
 4. Kişileri görüntülemek, düzenlemek veya silmek için listeye tıklayın.
 5. "Arama" kutusunu kullanarak kişileri isim veya soyisime göre arayın.
-6. Kişi eklediğinizde veya güncellediğinizde, bir bildirim penceresi ile uyarılırsınız.
+6. Kişi eklediğinizde, sildiğinizde veya düzenlediğinizde, bu işlemler SQL veritabanına da kaydedilir.
+7. İşlem sonuçları için bildirimler alırsınız.
+
+## Veritabanı Bağlantısı ve Migration
+
+Bu projede Entity Framework Core kullanılarak SQL veritabanı entegrasyonu sağlanmıştır. Bu sayede kişi ekleme, silme ve düzenleme işlemleri veritabanına da yansır. Veritabanı bağlantısı ve migration işlemleri otomatik olarak yapılmaktadır.
 
 ## Kurulum
 
@@ -31,9 +35,10 @@ bir bildirim penceresi ile uyarılır.
 
 Bu projede aşağıdaki teknolojiler kullanılmıştır:
 
-- HTML, CSS ve Bootstrap
+- HTML ve CSS
 - ASP.NET MVC
 - Entity Framework Core
+- SQL Server (veya tercih ettiğiniz başka bir SQL veritabanı)
 
 ## Katkıda Bulunma
 
