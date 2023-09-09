@@ -1,0 +1,52 @@
+/* _content/PersonalAdressBook.Web/Views/Shared/_Layout.cshtml.rz.scp.css */
+.container-fluid[b-qpnl3ur8ry] {
+   background-color:#E0B0FF;
+    height: 50px;
+}
+
+.nav-item[b-qpnl3ur8ry] {
+    display: flex;
+    padding-right: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: monospace;
+}
+
+.container[b-qpnl3ur8ry] {
+    background-color:#E0B0FF;
+    background-size: cover; /*Resmi ekranın tamamını kaplayacak şekilde boyutlandırın*/
+    color: white;
+}
+
+.form-label[b-qpnl3ur8ry] {
+    color: white;
+}
+
+.table[b-qpnl3ur8ry] {
+    color: white;
+}
+
+.form-control[b-qpnl3ur8ry] {
+    width: 130px; /* Arama butonunun genişliğini ayarlayın */
+    height:50px;
+    border-radius: 10px;
+}
+
+button[b-qpnl3ur8ry] {
+    color: white;
+    border-color: white;
+}
+
+    button:hover[b-qpnl3ur8ry] {
+        background-color: white;
+        color: #E0B0FF;
+    }
+
+
+
+
+
+
+
+
+

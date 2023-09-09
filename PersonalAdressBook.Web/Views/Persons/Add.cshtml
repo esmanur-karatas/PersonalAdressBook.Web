@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Add";
+}
+
+<style>
+        button:hover {
+        background-color: #e8d7ee;
+        }
+</style>
+
+<link href="c:\users\dell\desktop\personaladressbook\personaladressbook.web\views\shared\_layout.cshtml.css" rel="stylesheet" />
+@model Person
+<h1 style="text-align:center;">KİŞİ BİLGİSİ EKLEME</h1>
+<form asp-controller="Persons" asp-action="Add" method="post">
+    <div class="mb-3 text-white">
+        <label for="exampleInputEmail1" class="form-label">Kişinin Adı: </label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Soyadı: </label>
+        <input type="text" class="form-control" asp-for="Surname">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Telefon Numarası: </label>
+        <input type="text" class="form-control" asp-for="Phone">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Mail: </label>
+        <input type="text" class="form-control" asp-for="Email">
+    </div>
+    <button type="submit" class="btn btn-outline" style="color:white;">KAYDET</button>
+</form>
+
+

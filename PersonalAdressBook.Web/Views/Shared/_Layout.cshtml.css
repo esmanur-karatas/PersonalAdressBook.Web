@@ -1,0 +1,51 @@
+﻿.container-fluid {
+   background-color:#E0B0FF;
+    height: 50px;
+}
+
+.nav-item {
+    display: flex;
+    padding-right: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: monospace;
+}
+
+.container {
+    background-color:#E0B0FF;
+    background-size: cover; /*Resmi ekranın tamamını kaplayacak şekilde boyutlandırın*/
+    color: white;
+}
+
+.form-label {
+    color: white;
+}
+
+.table {
+    color: white;
+}
+
+.form-control {
+    width: 130px; /* Arama butonunun genişliğini ayarlayın */
+    height:50px;
+    border-radius: 10px;
+}
+
+button {
+    color: white;
+    border-color: white;
+}
+
+    button:hover {
+        background-color: white;
+        color: #E0B0FF;
+    }
+
+
+
+
+
+
+
+
+

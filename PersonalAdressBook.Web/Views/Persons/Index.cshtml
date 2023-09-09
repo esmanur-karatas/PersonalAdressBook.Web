@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@model List<Person> // model içindeki book list çağırdık
+<style>
+    button:hover {
+        background-color: white;
+        color: #E0B0FF;
+    }
+</style>
+
+<link href="c:\users\dell\desktop\personaladressbook\personaladressbook.web\views\shared\_layout.cshtml.css" rel="stylesheet" />
+@if (TempData["status"] != null)
+{
+    <div class="alert alert-success d-flex align-items-center" role="alert">
+
+        <div>
+            @TempData["status"]
+        </div>
+    </div>
+}
+
+<table class="table">
+    <h1 style="text-align:center;">KİŞİ ADRES DEFTERİ</h1>
+    <thead>
+        <tr>
+            <th class="text-white">No</th>
+            <th class="text-white">Kişinin Adı</th>
+            <th class="text-white">Kişinin Soyadı</th>
+            <th class="text-white">Telefon Numarası</th>
+            <th class="text-white">E-posta</th>
+            <th class="text-white">İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var item in Model) // değerleri ekrana basmak için
+            {
+                <tr>
+                    <td class="text-white">@item.Id</td>
+                    <td class="text-white">@item.Name</td>
+                    <td class="text-white">@item.Surname</td>
+                    <td class="text-white">@item.Phone</td>
+                    <td class="text-white">@item.Email</td>
+                    <td>
+                            <a asp-controller="persons" asp-action="remove" asp-route-id="@item.Id" class="text-white" style="text-decoration: none;">SİL</a>
+                    </td>
+                    <td><a asp-controller="persons" asp-action="update" asp-route-id="@item.Id" class="text-white" style="text-decoration:none;background-color:none; color:white">DÜZENLE</a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+
